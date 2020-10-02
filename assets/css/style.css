@@ -146,5 +146,46 @@ body {
     align-self: center;
 }
 
+@media screen and (max-width: 1200px) {
+    :root {
+        font-size: 18px;
+    }
 
+    body {
+        padding: 0.5rem;
+    }
 
+    .userCardContainer {
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .root {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userCardContainer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0.2rem;
+    }
+
+    .userCardContainer {
+        margin: 0.2rem;
+        width: 90%;
+    }
+}
