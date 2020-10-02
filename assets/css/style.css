@@ -1,5 +1,148 @@
 :root{
+    font-size: 20px;
+    --main-info-color: #82828E;
+    --main-button-color: #039BE6;
+    --main-font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: #282C34;
+}
+
+.root {
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.userCardContainer {
+    margin: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.userPreview {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userImage {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.star {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -1rem;
+    position: relative;
+    background-color: yellow;
+    border-radius: 50%;
     
+}
+
+.userJob, .userName {
+    margin-top: 1.2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: var(--main-font-family);
+}
+
+.userPayments {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--main-info-color);
+    font-family: var(--main-font-family);
+    font-weight: 600;
+}
+
+.userInfo {
+    background-color: #F1F2F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font-family);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.userLocation {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 0.8rem;
+    color: var(--main-info-color);
+    font-family: var(--main-font-family);
+    font-weight: 600;
+}
+
+.userLocation img {
+    margin-right: 0.3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--main-info-color);
+    border-radius: 50%;
+}
+
+.userExposition {
+    max-width: 70%;
+    color: var(--main-info-color);
+    margin-top: 1rem;
+    font-family: var(--main-font-family);
+}
+
+.button {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+}
+
+.viewCVButton {
+    border: 3px solid var(--main-button-color);
+    color: var(--main-button-color);
+    background-color: white;
+}
+
+.makeOfferButton {
+    margin-top: 1rem;
+    color: white;
+    background-color: var(--main-button-color);
+    border: 0;
+}
+
+.checkOnline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 2rem;
+    font-family: var(--main-font-family);
+    color: var(--main-info-color);
+}
+
+.checkOnline > .onlineLogo {
+    background-color: greenyellow;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    align-self: center;
 }
 
 
